@@ -36,31 +36,6 @@ public class Antarktis extends Maze {
         }
     }
 
-    private static void printArr(Animal[][] antarktis) {
-        System.out.println();
-        System.out.println("=================================================================================================================");
-        System.out.println();
-        for (Animal[] animals : antarktis) {
-            for (Animal animal : animals) {
-                if (animal == null) {
-                    System.out.print(" \t");
-                }
-                else if (Fish.class.equals(animal.getClass())) {
-                    System.out.print("F\t");
-                } else if (Penguin.class.equals(animal.getClass())) {
-                    System.out.print("P\t");
-                } else if (PlayerPenguin.class.equals(animal.getClass())) {
-                    System.out.print("V\t");
-                } else if (Whale.class.equals(animal.getClass())) {
-                    System.out.print("W\t");
-                } else if (LeopardSeal.class.equals(animal.getClass())) {
-                    System.out.print("S\t");
-                }
-            }
-            System.out.println();
-        }
-    }
-
     private static boolean movePlayer() {
         if (currentEvent == UP) {
             return playerPenguin.move(playerPenguin.x, playerPenguin.y - 1);

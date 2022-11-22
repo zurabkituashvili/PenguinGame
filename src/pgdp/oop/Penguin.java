@@ -12,6 +12,7 @@ public class Penguin extends Animal {
 
 		f = new File(filename);
 		image = Toolkit.getDefaultToolkit().getImage(f.getAbsolutePath());
+		type = 'P';
 	}
 
 	public boolean canEat(Animal animal) {

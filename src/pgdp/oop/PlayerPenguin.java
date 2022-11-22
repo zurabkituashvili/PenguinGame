@@ -4,6 +4,7 @@ public class PlayerPenguin extends Penguin {
 
 	public PlayerPenguin(int x, int y) {
 		super(x, y);
+		type = 'V';
 	}
 
 	public boolean canEat(Animal animal) {
@@ -22,7 +23,7 @@ public class PlayerPenguin extends Penguin {
 		}
 
 		if (antarktis[newX][newY] != null) {
-			if (!(antarktis[newX][newY] instanceof Fish)) {
+			if (!(antarktis[newX][newY].type == 'F')) {
 				return true;
 			}
 			antarktis[x][y].kill();

@@ -12,6 +12,7 @@ public class Fish extends Animal {
 
 		f = new File(filename);
 		image = Toolkit.getDefaultToolkit().getImage(f.getAbsolutePath());
+		type = 'F';
 	}
 
 	public boolean canEat(Animal animal) {

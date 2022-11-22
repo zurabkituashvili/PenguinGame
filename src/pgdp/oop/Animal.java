@@ -9,6 +9,7 @@ public abstract class Animal {
 	static String filename;
 	protected File f;
 	protected Image image;
+	protected char type;
 
 	protected boolean alive;
 

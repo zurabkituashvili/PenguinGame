@@ -12,6 +12,7 @@ public class Whale extends Animal {
 
 		f = new File(filename);
 		image = Toolkit.getDefaultToolkit().getImage(f.getAbsolutePath());
+		type = 'W';
 	}
 
 	public boolean canEat(Animal animal) {
